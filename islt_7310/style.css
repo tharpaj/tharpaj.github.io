@@ -1,1 +1,28 @@
-h1 {color: #cc3333}
+h1 {
+    color: #cc3333
+}
+
+footer {
+    font-size: 10pt;
+}
+
+a:link {
+    color: #006666;
+}
+a:hover {
+    color: #330066;
+}
+a:focus {
+    color: #996633;
+}
+a:visited {
+    color: #660099;
+}
+a:active {
+    color: #ff6600;
+}
+a {
+    text-decoration: none; 
+    font-size: 10pt;
+    color: #006666;
+}
