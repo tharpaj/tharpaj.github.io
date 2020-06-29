@@ -1,5 +1,42 @@
+* {
+    font-family: "arial", "helvetica", sans-serif;
+}
+
 h1 {
     color: #cc3333;
+    font-family: "marker felt",fantasy;
+    font-size: 32pt;
+}
+
+img {
+    float: left;
+}
+
+section {clear: left;}
+
+h3 {
+    color: #cc6600;
+    font-size:24pt;
+}
+
+header, main, section {
+    font-size: 18pt;
+}
+
+#undergrad{
+    color: #336600;  
+}
+
+#masters{
+    color: #333399;
+}
+
+#edsp{
+    color: #663399;
+}
+
+#certification{
+    color: #ff0066;
 }
 
 footer {
