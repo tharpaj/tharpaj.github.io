@@ -36,9 +36,6 @@ header, main, .section {
     font-size: 18pt;
 }
 
-section {
-    border: 3px solid #000000
-}
 #undergrad{
     color: #336600;  
 }
