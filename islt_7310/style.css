@@ -2,27 +2,43 @@
     font-family: "arial", "helvetica", sans-serif;
 }
 
+body {
+    background-color: #999999;
+    margin: 15px;
+}
+
 h1 {
-    color: #cc3333;
+    color: #000000;
     font-family: "marker felt",fantasy;
     font-size: 32pt;
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 10px;
+    background-color: #cc6699;
+}
+
+header p {
+    text-align: center;
 }
 
 img {
-    float: left;
+    float: right;
+    border: 2px solid #000000;
+    margin: 30px;
 }
-
-section {clear: left;}
 
 h3 {
     color: #cc6600;
     font-size:24pt;
 }
 
-header, main, section {
+header, main, .section {
     font-size: 18pt;
 }
 
+section {
+    border: 3px solid #000000
+}
 #undergrad{
     color: #336600;  
 }
@@ -41,6 +57,8 @@ header, main, section {
 
 footer {
     font-size: 10pt;
+    border-top: 3px dashed #000000;
+    text-align: center;
 }
 
 a:link {
