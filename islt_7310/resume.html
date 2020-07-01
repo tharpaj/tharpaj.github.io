@@ -3,25 +3,62 @@
     <head>
 <!--
 **********************************************************************
- Title: Resume Page
- Use: This page contains a link to my professional resume.
- Author: Aubrey Tharp
- School/Term:University of Missouri-Columbia,Summer 2020
- Developed: June 20, 2020
- Tested: June 20, 2020; Passed on Chrome, Safari, and Firefox browsers.
+Title: Aubrey Tharp's Resume Page
+Use: This page contains a link to my professional resume.
+Author: Aubrey Tharp
+School/Term:University of Missouri-Columbia,Summer 2020
+Developed: June 20, 2020
+HTML Validated:
+CSS Validataed:
+Tested: June 20, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
         -->
     <meta charset="utf-8">
-        <title>Resume</title>
+        <title>Aubrey Tharp's Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            main{
+                text-align: center;
+                padding: 10px;
+                background-color: #FFFFFF;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+            
+            a:link {
+                color: #0099CC;
+            }
+            
+            a:visited {
+                color: #CC66FF;
+            }
+                
+            a:hover {
+                color: #FF66CC;
+            }
+            
+             a:active {
+                color: #FFCC66;
+            }
+            
+            a:focus {
+                color: #00CC99;
+            }
+        </style>
     </head>
+    
     <body>
-        <a href="docs/tharpresume.pdf">Resume</a>
+        <header>
+            <h1>Aubrey Tharp</h1>
+        </header>
+        
+        <main>
+            <a href="docs/tharpresume.pdf">Resume</a>
+        </main>
        
         <footer>
-        <p>Posted by: Aubrey Tharp</p>
-        <p>Contact information: <a href="mailto:ajtfzf@mail.missouri.edu"> 
-        ajtfzf@mail.missouri.edu</a>.</p>
-        <p>&copy; Copyright 2020 Aubrey Tharp.</p>
+            <p>&copy; Copyright 2020 Aubrey Tharp<a href="mailto:ajtfzf@mail.missouri.edu"> ajtfzf@mail.missouri.edu</a></p>
         </footer>
+        
     </body>
 </html>

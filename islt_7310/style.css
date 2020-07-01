@@ -1,9 +1,22 @@
+/*
+**********************************************************************
+Title: Style CSS Page
+Use: This page contains CSS for my Home, Resume, and Accomplishment pages.
+Author: Aubrey Tharp
+School/Term:University of Missouri-Columbia,Summer 2020
+Developed: June 27, 2020
+HTML Validated:
+CSS Validataed:
+Tested: June 27, 2020; Passed on Chrome, Safari, and Firefox browsers.
+**********************************************************************
+*/
+
 * {
     font-family: "arial", "helvetica", sans-serif;
 }
 
 body {
-    background-color: #999999;
+    background-color: #3EC1D3;
     margin: 15px;
 }
 
@@ -14,21 +27,14 @@ h1 {
     text-align: center;
     border: 3px solid #000000;
     padding: 10px;
-    background-color: #cc6699;
+    background-color: #ED5485;
 }
 
 header p {
     text-align: center;
 }
 
-img {
-    float: right;
-    border: 2px solid #000000;
-    margin: 30px;
-}
-
 h3 {
-    color: #cc6600;
     font-size:24pt;
 }
 
@@ -36,45 +42,30 @@ header, main, .section {
     font-size: 18pt;
 }
 
-#undergrad{
-    color: #336600;  
-}
-
-#masters{
-    color: #333399;
-}
-
-#edsp{
-    color: #663399;
-}
-
-#certification{
-    color: #ff0066;
-}
-
 footer {
     font-size: 10pt;
     border-top: 3px dashed #000000;
     text-align: center;
+    padding-top: 5px;
 }
 
 a:link {
-    color: #006666;
+    color: #660066;
 }
 a:hover {
-    color: #330066;
+    color: #000066;
 }
 a:focus {
-    color: #996633;
+    color: #003366;
 }
 a:visited {
-    color: #660099;
+    color: #003300;
 }
 a:active {
-    color: #ff6600;
+    color: #663300;
 }
-a {
+footer a {
     text-decoration: none; 
     font-size: 10pt;
-    color: #006666;
+    color: #660066;
 }
