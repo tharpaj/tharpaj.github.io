@@ -8,15 +8,19 @@ Use: This page contains a welcome statement, and introduction, educational overv
 Author: Aubrey Tharp
 School/Term:University of Missouri-Columbia,Summer 2020
 Developed: June 20, 2020
-HTML Validated: July 1, 2020
-CSS Validataed: July 1, 2020
-Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
+HTML Validated: July 9, 2020
+CSS Validataed: July 9, 2020
+Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
         -->
         
         <meta charset="utf-8">
         <title>Aubrey Tharp' Home Page</title>
         <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Homemade Apple" rel="stylesheet">
         <style>
             img {
                 float: right;
@@ -24,10 +28,26 @@ Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 margin: 10px;
             }
             
+            #background{
+                background-image: url(images/red.jpg);
+            }
+            
+            header p{
+                padding: 15px;
+            }
+            
+            main{
+                float: right;
+            }
+            
+            #degrees {
+                clear:right;
+            }
+            
             main, #degrees, #certification, #quote {
                 border: 3px solid #000000;
-                margin-bottom:20px;
-                padding: 10px;
+                margin: 10px;
+                padding: 20px;
                 background-color: #FFFBCB;
             }
              
@@ -38,11 +58,31 @@ Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
     </head>
     
     <body>
+        <nav>
+            <p>Aubrey Tharp Portfolio</p>
+            <ul>
+                <li id="breadcrumbs"><a href="index.html">Home</a></li>
+                <li><a href= "resume.html">Resume</a></li>
+                <li><a href= "accomplishments.html">Accomplishments</a></li>
+                <li><a href="#project">Projects</a>
+                    <ul>
+                        <li><a href="#project1">Project 1</a></li>
+                        <li><a href="#project2">Project 2</a></li>
+                        <li><a href="#project3">Project 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="#contact.html">Contact Information</a></li>
+            </ul>
+        </nav>
+        
         <header>
-            <h1>Aubrey Tharp</h1>
+            <h1 id="background">Aubrey Tharp's
+            <br> 
+            Portfolio</h1>
             <p>Hello, and welcome to my portfolio website.</p>
         </header>
-        
+
         <main>
             <img src="images/atharp.jpg" alt="Picture of Aubrey Tharp." height="260" width="200">
             <h3>About Me</h3>
@@ -56,7 +96,7 @@ Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 <ul class="section">
                 <li>Bachelor of Science in Education - May 2005
                     <ul>
-                    <li>Dual Major: Early Childhood and Elementary Education</li>
+                        <li>Dual Major: Early Childhood and Elementary Education</li>
                     </ul>
                 </li>
                 </ul>
@@ -65,7 +105,7 @@ Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 <ul class="section">
                 <li>Masters of Arts in Teaching - May 2011
                     <ul>
-                    <li>Emphasis: Learning and Instruction</li>
+                        <li>Emphasis: Learning and Instruction</li>
                     </ul>
                 </li>
                 </ul>  
@@ -74,7 +114,7 @@ Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 <ul class="section">
                 <li>Educational Specialist in Information Science and Learning Technology - Anticipated Graduation May 2023
                     <ul>
-                    <li>Emphasis: Learning Technology and Design</li>
+                        <li>Emphasis: Learning Technology and Design</li>
                     </ul>
                 </li>
                 </ul> 
