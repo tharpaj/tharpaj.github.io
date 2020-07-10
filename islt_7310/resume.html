@@ -18,17 +18,15 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="nav.css">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
         <style>
             #background{
-                background-image: url(images/blue.jpg);
+                background-image: url(images/pink2gray.png);
+                background-size: contain;
             }
             
             main{
                 text-align: center;
-                padding: 10px;
-                background-color: #FFFFFF;
-                margin-bottom: 10px;
                 font-size: 30px;
             }
             
@@ -36,19 +34,19 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 color: #0099CC;
             }
             
-            a:visited {
+            main a:visited {
                 color: #CC66FF;
             }
                 
-            a:hover {
+            main a:hover {
                 color: #FF66CC;
             }
             
-             a:active {
+             main a:active {
                 color: #FFCC66;
             }
             
-            a:focus {
+            main a:focus {
                 color: #00CC99;
             }
         </style>
@@ -74,11 +72,13 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         </nav>
         
         <header>
-            <h1>Aubrey Tharp</h1>
+            <h1 id="background">Aubrey Tharp's
+                <br> 
+            Resume</h1>
         </header>
         
         <main>
-            <a href="docs/tharpresume.pdf">Resume</a>
+            <div class="content"><a href="docs/tharpresume.pdf">Resume</a></div>
         </main>
        
         <footer>

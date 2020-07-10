@@ -10,25 +10,27 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
 */
 
-* {
-    font-family: "Quicksand", "helvetica", "arial";
-    color: #1E212B;
+* { 
+    font-family: "Jost", "helvetica", "arial";
+    color: #000000;
+
 }
 
 body {
-    background-color: #DDDDDD;
+    background-color: #EAEAEA;
 }
-
 
 h1 {
     text-align: center;
-    margin: 50px 0px;
-    padding: 100px 0px 0px 0px;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    padding: 50px 0px 15px 0px;
     font-weight: bold;
-    font-family: "helvetica", "arial";
     font-size: 40pt;
-    background-color: #B6C2C5;
-    height: 250px;
+    height: 210px;
+    font-family: "marker felt", fantasy;
+    left: 0;
+    right: 0;
 }
 
 header p {
@@ -53,7 +55,7 @@ header, main, .section {
 
 footer {
     font-size: 10pt;
-    border-top: 3px dashed #1E212B;
+    border-top: 3px dashed #000000;
     text-align: center;
     padding-top: 5px;
 }

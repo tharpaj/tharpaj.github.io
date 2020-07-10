@@ -18,8 +18,9 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         <title>Aubrey Tharp' Home Page</title>
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        
         <style>
             img {
                 float: right;
@@ -28,7 +29,8 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
             }
             
             #background{
-                background-image: url(images/red.jpg);
+                background-image: url(images/pink2gray.png);
+                background-size: contain;
             }
             
             header p{
@@ -42,23 +44,16 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
             #degrees {
                 clear:right;
             }
-            
-            main, #degrees, #certification, #quote {
-                border: 3px solid #000000;
-                margin: 10px;
-                padding: 20px;
-                background-color: #FFFBCB;
-            }
              
             h3 {
-                color: #FBB901;
+                color: #218380;
             }
         </style>
     </head>
     
     <body>
         <nav>
-            <p>Aubrey Tharp Portfolio</p>
+            <p><a href="index.html">Aubrey Tharp Portfolio</a></p>
             <ul>
                 <li id="breadcrumbs"><a href="index.html">Home</a></li>
                 <li><a href= "resume.html">Resume</a></li>
@@ -83,13 +78,15 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         </header>
 
         <main>
+            <div class="content">
             <img src="images/atharp.jpg" alt="Picture of Aubrey Tharp." height="260" width="200">
             <h3>About Me</h3>
             <p>My name is Aubrey Tharp. I live in St. Charles, Missouri with my husband and two kids. I have been an elementary teacher for 14 years with experience ranging from kindergarten to third grade. I also was a Library Media Specialist paraprofessional, teaching technology skills to students from kindergarten to fifth grade. Currently, I am teaching kindergarten. I have always had an interest in technology. I would like to be able to design learning programs and apps for my students, especially those on the younger end of the spectrum. This desire has led me to pursue an Educational Specialist degree in Information Science and Learning Technologies. I began my program in the Spring of 2020 and currently, I am anticipated to graduate in the Spring of 2023.</p>
+            </div>
         </main>
         
         <section>
-            <div id="degrees">
+            <div id="degrees" class="content">
             <h3>Degrees</h3>
             <p class="section"><strong>Undergraduate</strong></p>
                 <ul class="section">
@@ -119,7 +116,7 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 </ul> 
             </div>
         
-            <div id="certification">
+            <div id="certification" class="content">
             <h3>Certifications</h3>
                 <ul class="section">
                 <li>Missouri: Early Childhood Education (Birth-Grade 3)</li>
@@ -127,7 +124,7 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 </ul>
             </div>
             
-            <div id="quote">
+            <div id="quote" class="content">
             <h3>Favorite Quote</h3>
             <blockquote class="section"><em>"Sometimes you gotta fall before you fly."</em> - Kellin Quinn</blockquote>
             </div>
