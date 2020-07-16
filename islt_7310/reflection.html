@@ -16,7 +16,8 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         -->
         
     <meta charset="utf-8">
-        <title>Aubrey Tharp' Home Page</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Aubrey Tharp Reflection</title>
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="nav.css">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
@@ -27,35 +28,33 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 background-size: contain;
             }
             
-            #para1::first-letter{
-                font-size: 40pt;
-            }
-            
-            .para2::first-line{
+            p::first-line{
                 text-indent: 50px;
             }
+            
         </style>
     </head>
     
     <body>
     
         <nav>
-            <p>Aubrey Tharp Portfolio</p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href= "resume.html">Resume</a></li>
-                <li><a href= "accomplishments.html">Accomplishments</a></li>
-                <li><a href="#project">Projects</a>
-                    <ul>
-                        <li><a href="#project1">Project 1</a></li>
-                        <li><a href="#project2">Project 2</a></li>
-                        <li><a href="#project3">Project 3</a></li>
-                    </ul>
-                </li>
-                <li id="breadcrumbs"><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact Information</a></li>
-            </ul>
-        </nav>
+                <label id="hamburger">&#9776;</label>
+                <p id="title"><a href="index.html">Aubrey Tharp Portfolio</a></p>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href= "resume.html">Resume</a></li>
+                    <li><a href= "accomplishments.html">Accomplishments</a></li>
+                    <li><a href="#projects">Projects</a>
+                        <ul class="submenu">
+                            <li><a href="#project1">Project 1</a></li>
+                            <li><a href="#project2">Project 2</a></li>
+                            <li><a href="#project3">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li id="breadcrumbs"><a href="reflection.html"><strong>Reflection</strong></a></li>
+                    <li><a href="contact.html">Say Hello!</a></li>
+                </ul>
+            </nav>
         
         <header>
             <h1 id="background">Aubrey Tharp's
@@ -66,10 +65,9 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
         <main>
             <div class="content">
             <h3>What I've Learned</h3>
-            <p id="para1">At this point in time, I have only had one other class besides this one. My experience with my first class, Instructional Systems Design, was difficult but also informative. I feel the skills I learned through this class will help me as I continue to work through my degree program.</p>
-        
+            <p>At this point in time, I have only had one other class besides this one. My experience with my first class, Instructional Systems Design, was difficult but also informative. I feel the skills I learned through this class will help me as I continue to work through my degree program.</p>
             <h3>My Future Plans</h3>
-            <p class="para2">When I began my Learning Technology and Design program, I thought that I would learn ways to better my understanding of using technology in education. What I found was so much more. As I started my program, the world, especially education, was thrown into a new digital era. Technology became the sole source of teaching and communication for the majority of students. The gaps that allowed online learning became apparent.</p> 
+            <p>When I began my Learning Technology and Design program, I thought that I would learn ways to better my understanding of using technology in education. What I found was so much more. As I started my program, the world, especially education, was thrown into a new digital era. Technology became the sole source of teaching and communication for the majority of students. The gaps that allowed online learning became apparent.</p> 
             <p class="para2">After I graduate, I will continue to be a classroom teacher. With all that I have learned, I would like to create programs that allow my students, especially the younger learners, to be able to have adequate online learning programs, websites, and apps that will allow them to continue the learning process no matter if they are in the classroom or at home learning.</p>
             </div>
         

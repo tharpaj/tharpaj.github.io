@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--
+**********************************************************************
+Title: Aubrey Tharp's Contact Page
+Use: This is the contact page for my website.
+Author: Aubrey Tharp
+School/Term:University of Missouri-Columbia,Summer 2020
+Developed: July 14, 2020
+HTML Validated: July 1, 2020
+CSS Validataed: July 1, 2020
+Tested: July 1, 2020; Passed on Chrome, Safari, and Firefox browsers.
+**********************************************************************
+        -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Contact Aubrey Tharp</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+        
+        <style>
+        
+            #background{
+                background-image: url(images/pink2gray.png);
+                background-size: contain; 
+            }
+            
+            .columns{
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                margin: 15px;
+            }
+            
+            aside{
+                background-color: #ffffff;
+                flex-basis: 25%;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+            }
+            
+            a{
+                text-decoration: none;
+            }
+            
+            a:link, a:visted, a:active, a:hover, a:focus{
+                color: #000000;
+            }
+            
+            main{
+                background-color: #ffffff;
+                flex-basis: 75%;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+            }
+            
+            main h4{
+                font-size: 1.5em;
+                margin: 10px;
+            }
+            
+            main p{
+                font-size: 0.7em;
+                margin: 10px;
+            }
+        
+            main ul li{
+                list-style: none;
+                display: inline-block;
+            }
+            
+            .name{
+                height: 30px;
+                width: 300px;
+                margin: 0 10px 20px 10px;
+                border: 1px solid black;
+            }
+            
+            .emailaddress{
+                height: 30px;
+                width: 632px;
+                margin-bottom: 20px;
+                border: 1px solid black;
+            }
+            
+            .subject{
+                height: 30px;
+                width: 632px;
+                margin-bottom: 20px;
+                border: 1px solid black;
+            }
+            
+            .message{
+                height: 150px;
+                width: 632px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+            }
+
+            @media only screen and (max-width: 914px){
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .columns{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+                
+                aside{
+                    background-color: #ffffff;
+                    text-align: center;
+                    order: 2;
+                }
+            
+                a{
+                    text-decoration: none;
+                }
+
+                a:link, a:visted, a:active, a:hover, a:focus{
+                    color: black;
+                }
+
+                main{
+                    background-color: #ffffff;
+                    text-align: center;
+                    order: 1;
+                }
+
+                main h4{
+                    font-size: 1em;
+                    margin: 10px;
+                }
+
+                main p{
+                    font-size: 0.7em;
+                    margin: 10px;
+                }
+
+                main ul li{
+                    list-style: none;
+                    display: inline-block;
+                }
+
+                .emailform{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 25px;
+                }
+                
+                .name, .emailaddress, .subject, .message{
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+                <label id="hamburger">&#9776;</label>
+                <p id="title"><a href="index.html">Aubrey Tharp Portfolio</a></p>
+                <ul class="menu">
+                    <li id="breadcrumbs"><a href="index.html"><strong>Home</strong></a></li>
+                    <li><a href= "resume.html">Resume</a></li>
+                    <li><a href= "accomplishments.html">Accomplishments</a></li>
+                    <li><a href="#projects">Projects</a>
+                        <ul class="submenu">
+                            <li><a href="#project1">Project 1</a></li>
+                            <li><a href="#project2">Project 2</a></li>
+                            <li><a href="#project3">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html">Say Hello!</a></li>
+                </ul>
+            </nav>
+        <header>
+            <h1 id="background">Contact Aubrey Tharp</h1>
+        </header>
+        
+        <div class="columns">
+        <aside>
+            <h4 class="email">Email Address:</h4>
+            <p class="email_address"><a href="mailto:ajtfzf@mail.missouri.edu">ajtfzf@mail.missouri.edu</a></p>
+            <br>
+            <h4 class="phone">Phone Number:</h4>
+            <p class="phone_number"><a href="tel:314-808-0883">(314)808-0883</a></p>
+            <br>
+            <h4 class="address">Street Address:</h4>
+            <pre class="street_address">10 Doubletree Ct.
+St. Charles, MO 63303</pre>
+        </aside>
+        
+        <main>
+            <h4> Message Me</h4>
+            <p> If you have any questions, please feel free to send me a message.</p><p>I'll get back to you as soon as I can!</p>
+            <ul class="emailform">
+                <li class="name">First Name</li>
+                <li class="name">Last Name</li>
+                <li class="emailaddress">Email Address</li>
+                <li class="subject">Subject</li>
+                <li class="message">Message</li>
+            </ul>
+        </main>
+        </div>
+        
+        <footer>
+            <p>&copy; Copyright 2020 Aubrey Tharp<a href="mailto:ajtfzf@mail.missouri.edu"> ajtfzf@mail.missouri.edu</a></p>
+        </footer>
+    
+    </body>
+</html>

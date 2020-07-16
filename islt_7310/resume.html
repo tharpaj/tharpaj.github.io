@@ -14,7 +14,8 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
         -->
     <meta charset="utf-8">
-        <title>Aubrey Tharp' Home Page</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Aubrey Tharp Resume</title>
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="nav.css">
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
@@ -25,51 +26,99 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 background-size: contain;
             }
             
-            main{
-                text-align: center;
-                font-size: 30px;
+            .columns{
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                margin: 15px;
             }
             
-            main a:link {
+            aside{
+                background-color: #ffffff;
+                flex-basis: 25%;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+                order: 2;
+            }
+            
+            main{
+                background-color: #ffffff;
+                flex-basis: 75%;
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+                order: 1;
+            }
+            
+            footer{
+                clear: both;
+            }
+            
+            aside a:link {
                 color: #0099CC;
             }
             
-            main a:visited {
+            aside a:visited {
                 color: #CC66FF;
             }
                 
-            main a:hover {
+            aside a:hover {
                 color: #FF66CC;
             }
             
-             main a:active {
+            aside a:active {
                 color: #FFCC66;
             }
             
-            main a:focus {
+            aside a:focus {
                 color: #FF66CC;
+            }
+            
+            @media only screen and (max-width:1047px){
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .columns{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+                
+                aside{
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+                main{
+                   text-align: center;
+                }
             }
         </style>
     </head>
     
     <body>
         <nav>
-            <p>Aubrey Tharp Portfolio</p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li id="breadcrumbs"><a href= "resume.html">Resume</a></li>
-                <li><a href= "accomplishments.html">Accomplishments</a></li>
-                <li><a href="#project">Projects</a>
-                    <ul>
-                        <li><a href="#project1">Project 1</a></li>
-                        <li><a href="#project2">Project 2</a></li>
-                        <li><a href="#project3">Project 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact Information</a></li>
-            </ul>
-        </nav>
+                <label id="hamburger">&#9776;</label>
+                <p id="title"><a href="index.html">Aubrey Tharp Portfolio</a></p>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="breadcrumbs"><a href= "resume.html"><strong>Resume</strong></a></li>
+                    <li><a href= "accomplishments.html">Accomplishments</a></li>
+                    <li><a href="#projects">Projects</a>
+                        <ul class="submenu">
+                            <li><a href="#project1">Project 1</a></li>
+                            <li><a href="#project2">Project 2</a></li>
+                            <li><a href="#project3">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html">Say Hello!</a></li>
+                </ul>
+            </nav>
         
         <header>
             <h1 id="background">Aubrey Tharp's
@@ -77,10 +126,18 @@ Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
             Resume</h1>
         </header>
         
-        <main>
+        <div class="columns">
+            <aside>
+            <p class="content"> To view my resume, please click the link below.</p>
             <div class="content"><a href="docs/tharpresume.pdf" target="_blank">Resume</a></div>
+        </aside>
+        <main>
+            <p class="content">Resume Video</p>
         </main>
-       
+        
+        
+        </div>
+        
         <footer>
             <p>&copy; Copyright 2020 Aubrey Tharp<a href="mailto:ajtfzf@mail.missouri.edu"> ajtfzf@mail.missouri.edu</a></p>
         </footer>
