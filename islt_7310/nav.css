@@ -128,7 +128,7 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
     }
     
     nav ul, nav:active ul{
-        xdisplay: none;
+        display: none;
         position: absolute;
         padding: 20px;
         right: 10px;
