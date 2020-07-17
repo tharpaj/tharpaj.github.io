@@ -117,9 +117,8 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
     }
     
     nav{
-        position: relative;
-        height: 40px;
-        display: block;
+        position: absolute;
+        line-height: 40px;
         width: 100%;
     }
     
@@ -128,10 +127,13 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         line-height: 40px
     }
     
-    nav ul, nav:active{
-        display: none;
+    nav ul, nav:active ul{
+        xdisplay: none;
         position: absolute;
-        padding: 20px 20px 20px 0;
+        padding: 20px;
+        right: 10px;
+        top: 0px;
+        width: 25%;
     }
     
     nav:hover ul{
@@ -157,6 +159,7 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         font-weight: bold;
         color: #000000;
         float: right;
+        line-height: 25%
     }
     
     nav a{
@@ -176,7 +179,4 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         padding: 0;
         background-color: #ED5C86;
     }
-    
-    nav ul li ul{
-        display: none;
-    }
+}
