@@ -21,21 +21,25 @@ body {
     margin: 0;
 }
 
-#background{
-    background-image: url(images/pink2gray.png);
-    background-size: contain;
-            }
-
 header h1 {
     width: 100%;
     text-align: center;
-    padding: 50px 0px 15px 0px;
     font-weight: bold;
     font-size: 40pt;
-    height: 210px;
+    color: #000000;
     font-family: "marker felt", fantasy;
     left: 0;
     right: 0;
+    margin: 50px 0 0 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+
+#background{
+    background-image: url(images/flowers.jpg);
+    background-size: contain;
+    width: auto;
 }
 
 h3 {
@@ -55,14 +59,17 @@ header, main, .section {
 }
 
 footer {
-    font-size: 10pt;
+    font-size: 12pt;
     border-top: 3px dashed #000000;
     text-align: center;
-    padding-top: 5px;
+    xpadding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url(images/flowers.jpg);
+    background-size: 80px;
 }
 
 a:link {
-    color: #660066;
+    color: #000000;
 }
 a:hover {
     color: #000066;
@@ -78,8 +85,14 @@ a:active {
 }
 footer a {
     text-decoration: none; 
-    font-size: 10pt;
-    color: #660066;
+    font-size: 12pt;
+    color: #ffffff;
+}
+
+footer img{
+    padding-left: 25px;
+    padding-right: 5px;
+    width: 10px;
 }
 
 @media only screen and (max-width:1152px){

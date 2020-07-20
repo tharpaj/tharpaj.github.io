@@ -12,20 +12,21 @@ Tested: July 16, 2020; Passed on Chrome, Safari, and Firefox browsers.
 
 nav{
     width: 100%;
-    line-height: 70px;
-    background-color: #ED5C86;
+    line-height: 20px;
+    background-color: #FDAB9F;
     padding: 0;
     position: fixed;
     margin: 0;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 nav p{
     font-family: "Jost", "helvetica", "arial";
-    line-height: 70px;
+    line-height: 20px;
     float: left;
-    padding: 0 15px;
+    padding: 20px 15px;
     color: #000000;
     font-size: 22pt;
     margin: 0;
@@ -114,17 +115,18 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         cursor: pointer;
         line-height: 40px;
         width: 25px;
+        padding: 5px;
     }
     
     nav{
         position: absolute;
-        line-height: 40px;
         width: 100%;
+        position: fixed;
     }
     
     nav p{
         font-size: 18pt;
-        line-height: 40px
+        padding: 5px;
     }
     
     nav ul, nav:active ul{
@@ -177,6 +179,6 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         line-height: 40px;
         margin: 0;
         padding: 0;
-        background-color: #ED5C86;
+        background-color: #FDAB9F;
     }
 }
