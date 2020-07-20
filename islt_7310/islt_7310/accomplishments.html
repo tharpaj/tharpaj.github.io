@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--
+**********************************************************************
+Title: Aubrey Tharp's Accomplishments Page
+Use: This page includes different accomplishments I have gained through my professional career.
+Author: Aubrey Tharp
+School/Term:University of Missouri-Columbia,Summer 2020
+Developed: June 30, 2020
+HTML Validated: July 9, 2020
+CSS Validataed: July 9, 2020
+Tested: July 9, 2020; Passed on Chrome, Safari, and Firefox browsers.
+**********************************************************************
+        -->
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Aubrey Tharp Accomplishments</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+        
+        <style>
+            #background{
+                background-image: url(images/pink2gray.png);
+                background-size: contain;
+            }
+            
+            main{
+                background-color: #ffffff;
+                margin: 15px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .header{
+                text-align: center;
+            }
+            
+            .accomplish{
+                display: flex;
+                font-size: 22px;
+                padding: 10px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+            }
+            
+            .leadroles{
+                flex-basis: 33%;
+                flex-grow: 0;
+                padding: 10px;
+            }
+            
+            .committees{
+                flex-basis: 33%;
+                flex-grow: 0;
+                padding: 10px;
+            }
+            
+            .trainings{
+                flex-basis: 34%;
+                flex-grow: 0;
+                padding: 10px;
+            }
+            
+            .divider{
+                width: 1px;
+                margin: 30px 0;
+                background: black;
+            }
+            
+            .leader, .commits, .train{
+                text-align: center;
+                font-weight: bold;
+            }
+            
+            #leader, #commits, #train{
+                font-size: 20px;
+            }
+            
+            @media only screen and (max-width: 918px){
+            
+                .accomplish{
+                    display: block;
+                    background-color: #ffffff;
+                }
+                
+                .leadroles{
+                    margin: 0;
+                    padding: 0;
+                    height: 34%;
+                    border-bottom: 1px solid black;
+                }
+                
+                .committees{
+                    margin: 0;
+                    padding: 0;
+                    height: 33%;
+                    border-bottom: 1px solid black;
+                }
+                
+                .trainings{
+                    margin: 0;
+                    padding: 0;
+                    height: 33%;
+                }
+                
+                .divider{
+                    width: 0;
+                    margin: 0;
+                }
+            }
+                
+        </style>
+    </head>
+    
+    <body>
+            <nav>
+                <label id="hamburger">&#9776;</label>
+                <p id="title"><a href="index.html">Aubrey Tharp Portfolio</a></p>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href= "resume.html">Resume</a></li>
+                    <li id="breadcrumbs"><a href= "accomplishments.html"><strong>Accomplishments</strong></a></li>
+                    <li><a href="#projects">Projects</a>
+                        <ul class="submenu">
+                            <li><a href="#project1">Project 1</a></li>
+                            <li><a href="#project2">Project 2</a></li>
+                            <li><a href="#project3">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html">Say Hello!</a></li>
+                </ul>
+            </nav>
+        
+    <header>
+     <h1 id="background">Aubrey Tharp's
+        <br>
+        Accomplishments</h1>
+    </header>
+        
+    <main>
+        <p class="header">The following are a list of accomplishments I have earned during my teaching career.</p>
+        
+        <div class="accomplish">
+        <div class="leadroles">
+        <p class="leader">Leadership Roles</p>
+            <ul id="leader">
+                <li>example leadership role</li>
+                <li>example leadership role</li>
+                <li>example leadership role</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        <div class="committees">
+        <p class="commits">Committees</p>
+            <ul id="commits">
+                <li>example committee</li>
+                <li>example committee</li>
+                <li>example committee</li>
+            </ul>
+        </div>
+        
+        <div class="divider"></div>
+        <div class="trainings">
+        <p class= "train">Trainings</p>
+            <ul id="train">
+                <li>example training</li>
+                <li>example training</li>
+                <li>example training</li>
+            </ul>
+        </div>
+        </div>
+        
+        </main>
+    
+    <footer>
+        <p>&copy; Copyright 2020 Aubrey Tharp<a href="mailto:ajtfzf@mail.missouri.edu"> ajtfzf@mail.missouri.edu</a></p>
+    </footer>
+    
+</body>
+</html>
