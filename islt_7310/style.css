@@ -25,15 +25,15 @@ header h1 {
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 3.5em;
     color: #000000;
-    font-family: "marker felt", fantasy;
     left: 0;
     right: 0;
     margin: 50px 0 0 0;
     padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: 2px solid black;
+    font-family: "Amatic SC";
 }
 
 #background{
@@ -82,13 +82,14 @@ a:visited {
 a:active {
     color: #663300;
 }
+
 footer a {
     text-decoration: none; 
     font-size: 12pt;
     color: #ffffff;
 }
 
-footer img{
+footer>img{
     padding-left: 25px;
     padding-right: 5px;
     width: 10px;
