@@ -25,15 +25,15 @@ header h1 {
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 3.5em;
     color: #000000;
-    font-family: "marker felt", fantasy;
     left: 0;
     right: 0;
     margin: 50px 0 0 0;
     padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: 2px solid black;
+    font-family: "Amatic SC";
 }
 
 #background{
@@ -62,7 +62,6 @@ footer {
     font-size: 12pt;
     border-top: 3px dashed #000000;
     text-align: center;
-    xpadding-top: 5px;
     padding-bottom: 5px;
     background-image: url(images/flowers.jpg);
     background-size: 80px;
