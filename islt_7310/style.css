@@ -65,6 +65,8 @@ footer {
     padding-bottom: 5px;
     background-image: url(images/flowers.jpg);
     background-size: 80px;
+    padding-top: 10px;
+    line-height: 16px;
 }
 
 a:link {
@@ -87,12 +89,14 @@ footer a {
     text-decoration: none; 
     font-size: 12pt;
     color: #ffffff;
+    line-height: 16px;
 }
 
-footer>img{
+footer img{
     padding-left: 25px;
     padding-right: 5px;
-    width: 10px;
+    max-width: 14px;
+    line-height: 16px;
 }
 
 @media only screen and (max-width:1152px){
