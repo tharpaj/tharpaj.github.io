@@ -5,8 +5,8 @@ Use: This page contains CSS for my Home, Resume, and Accomplishment pages.
 Author: Aubrey Tharp
 School/Term:University of Missouri-Columbia,Summer 2020
 Developed: June 27, 2020
-CSS Validataed: July 16, 2020
-Tested: July 16, 2020; Passed on Chrome, Safari, and Firefox browsers.
+CSS Validataed: July 22, 2020
+Tested: July 22, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
 */
 
@@ -171,7 +171,6 @@ footer img:hover{
     .phone{
         display: block;
         text-align: left;
-        text-justify: left;
         line-height: 12px;
         vertical-align: top;
     }
