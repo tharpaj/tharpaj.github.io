@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+<!--
+**********************************************************************
+Title: Aubrey Tharp's Resume Page
+Use: This page contains a link to my professional resume.
+Author: Aubrey Tharp
+School/Term:University of Missouri-Columbia,Summer 2020
+Developed: June 20, 2020
+HTML Validated: July 16, 2020
+CSS Validataed: July 16, 2020
+Tested: July 16, 2020; Passed on Chrome, Safari, and Firefox browsers.
+**********************************************************************
+        -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Aubrey Tharp Resume Page</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="nav.css">
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+        <style>
+            .columns{
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                margin: 15px;
+            }
+            
+            aside{
+                background-color: #ffffff;
+                flex-basis: 25%;
+                padding: 5px;
+                margin-left: 10px;
+                text-align: center;
+                order: 2;
+                font-size: 1.5vw;
+                height: 200px;
+            }
+            
+            main{
+                background-color: #ffffff;
+                flex-basis: 75%;
+                padding: 5px;
+                text-align: center;
+                order: 1;
+            }
+            
+            
+            footer{
+                clear: both;
+            }
+            
+            aside a:link {
+                color: #0099CC;
+            }
+            
+            aside a:visited {
+                color: #CC66FF;
+            }
+                
+            aside a:hover {
+                color: #FF66CC;
+            }
+            
+            aside a:active {
+                color: #FFCC66;
+            }
+            
+            aside a:focus {
+                color: #FF66CC;
+            }
+            
+            @media only screen and (max-width:1047px){
+                
+                .columns{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+                
+                main p{
+                    width: 80%;
+                }
+                
+                aside{
+                    text-align: center;
+                    justify-content: center;
+                    margin: 10px 0 0 0;
+                    font-size: 18pt;
+                }
+                
+                main{
+                   text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            
+             @media only screen and (max-width:430px){
+                 aside p{
+                     display: none;
+                 }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <nav>
+                <label id="hamburger">&#9776;</label>
+                <p id="title"><a href="index.html">Aubrey Tharp Portfolio</a></p>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li id="breadcrumbs"><a href= "resume.html"><strong>Resume</strong></a></li>
+                    <li><a href= "accomplishments.html">Accomplishments</a></li>
+                    <li><a href="projects.html">Projects</a>
+                        <ul class="submenu">
+                            <li><a href="projects.html#section1">Goal 1</a></li>
+                            <li><a href="projects.html#section2">Goal 2</a></li>
+                            <li><a href="projects.html#section3">Goal 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html">Say Hello!</a></li>
+                </ul>
+            </nav>
+        
+        <header>
+            <h1 id="background">Aubrey Tharp's
+                <br> 
+            Resume</h1>
+        </header>
+        
+        <div class="columns">
+        <aside>
+            <p class="content"> To view my resume, please click the link below.</p>
+            <div class="content"><a href="docs/tharpresume.pdf" target="_blank">Resume</a></div>
+        </aside>
+        <main>
+            <p class="content">Resume Video</p>
+            <div class= "iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vmFuFe28mxU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+        </div>
+        
+        <footer>
+            <p><span class="copyright">&copy; Copyright 2020 Aubrey Tharp</span>
+            <span class="email"><img src="images/icon3.png" alt= "email icon"><a href="mailto:ajtfzf@mail.missouri.edu"> ajtfzf@mail.missouri.edu</a></span>
+            <span class="phone"><img src="images/icon4.png" alt= "telephone icon"> <a href="tel:-888-888-8888">(888)888-8888</a></span></p>
+        </footer>
+        
+    </body>
+</html>
