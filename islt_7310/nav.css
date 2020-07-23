@@ -185,4 +185,8 @@ nav a:link, a:active, a:visited, a:hover, a:focus{
         padding: 0;
         background-color: #FDAB9F;
     }
+    
+    nav ul li ul:active{
+        display: none;
+    }
 }

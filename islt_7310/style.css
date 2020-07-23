@@ -94,9 +94,15 @@ footer a {
 
 footer img{
     padding-left: 25px;
-    padding-right: 5px;
+    padding-right: 10px;
     max-width: 14px;
     line-height: 16px;
+    transition: transform .2s;
+}
+
+footer img:hover{
+    transform: scale(1.5);
+    padding-right: 10px;
 }
 
 @media only screen and (max-width:1152px){
