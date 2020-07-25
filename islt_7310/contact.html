@@ -70,38 +70,97 @@ Tested: July 22, 2020; Passed on Chrome, Safari, and Firefox browsers.
                 font-size: 0.7em;
                 margin: 10px;
             }
-        
-            main ul li{
-                list-style: none;
+            
+            form{
+                border-radius: 5px;
+                background-color: #DEDEDC;
+                padding: 20px;
+                width: 80%;
+                margin: auto;
+                
+            }
+            input, textarea{
+                width: 100%;
+                padding: 12px;
+                box-sizing: border-box;
+                font-family: "Jost", Hevetica, "arial";
+                border: 1px solid #000000;
+                border-radius: 4px;
+                resize: vertical;
+                font-size: 0.7em;
+            }
+            
+            
+            label{
+                padding: 12px 12px 12px 0;
                 display: inline-block;
+                font-size: 0.9em;
             }
             
-            .name{
-                height: 30px;
-                width: 300px;
-                margin: 0 10px 20px 10px;
-                border: 1px solid black;
+            
+            input:focus{
+                border: 3px solid #ABAAA8;
             }
             
-            .emailaddress{
-                height: 30px;
-                width: 632px;
-                margin-bottom: 20px;
-                border: 1px solid black;
+            input[type=submit]{
+                background-color: #EFD2CD;
+                margin-top: 20px;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+                width: 30%;
+                
             }
             
-            .subject{
-                height: 30px;
-                width: 632px;
-                margin-bottom: 20px;
-                border: 1px solid black;
+            input[type=submit]:hover{
+                background-color: #FDAB9F;
+                box-shadow: 5px 5px 8px #ABAAA8;
             }
             
-            .message{
-                height: 150px;
-                width: 632px;
-                border: 1px solid black;
-                margin-bottom: 20px;
+            
+            input:hover{
+                border: 2px solid #000000;
+            }
+            
+            input:required, input[required]{
+                border: 3px solid #ff0000;
+            }
+            
+            input:valid{
+                border: 1px solid #000000
+            }
+            
+            input:invalid{
+                box-shadow: none;
+            }
+            .col-25{
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            
+            .col-75{
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            
+            .row:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+            
+            @media only screen and (max-width: 1104px){
+                .col-25, .col-75{
+                    width: 100%;
+                    margin-top: 0;
+                }
+                input[type="submit"]{
+                    width: 25%;
+                }
             }
 
             @media only screen and (max-width: 914px){
@@ -206,14 +265,51 @@ A Place, MO 888888</pre>
         
         <main>
             <h4> Message Me</h4>
-            <p> If you have any questions, please feel free to send me a message.</p><p>I'll get back to you as soon as I can!</p>
-            <ul class="emailform">
-                <li class="name">First Name</li>
-                <li class="name">Last Name</li>
-                <li class="emailaddress">Email Address</li>
-                <li class="subject">Subject</li>
-                <li class="message">Message</li>
-            </ul>
+            <p> If you have any questions, please feel free to send me a message.</p><p>I'll get back to you as soon as I can!</p><br>
+            <form>
+                <div class="row">
+                <div class="col-25">
+                <label for="first name" class="name">First Name:</label>
+                </div>
+                <div class="col-75">
+                <input type="text" class="name" name="first name" required placeholder="Your first name" autofocus>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                <label for="last name" class="name">Last Name:</label>
+                </div>
+                <div class="col-75">
+                <input type="text" class="name" name="last name" required placeholder="Your last name">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                <label for="email">Email Address:</label>
+                </div>
+                <div class="col-75">
+                <input type="email" class="emailaddress" name="email" required placeholder="email@gmail.com">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                <label for="subject">Subject:</label>
+                </div>
+                <div class="col-75">
+                <input type="text" class="subject" value="Portfolio Website Contact" readonly>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-25">
+                <label for="message">Message:</label>
+                </div>
+                <div class="col-75">
+                <textarea name= "message" class="message" required placeholder="Message"></textarea>
+                </div>
+                </div>
+                <div class="row">     <input type="submit" id="button" value="Send">
+                </div>
+            </form>
         </main>
         </div>
         
