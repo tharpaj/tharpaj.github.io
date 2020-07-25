@@ -200,17 +200,6 @@ Tested: July 22, 2020; Passed on Chrome, Safari, and Firefox browsers.
                     display: inline-block;
                 }
 
-                .emailform{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-top: 25px;
-                }
-                
-                .name, .emailaddress, .subject, .message{
-                    width: 80%;
-                }
-                
                 main{
                     margin-top: 10px;
                 }
@@ -259,18 +248,18 @@ A Place, MO 888888</pre>
             <form>
                 <div class="row">
                 <div class="col-25">
-                <label for="first name" class="name">First Name:</label>
+                <label for="fname">First Name:</label>
                 </div>
                 <div class="col-75">
-                <input type="text" class="name" name="first name" required placeholder="Your first name" autofocus>
+                <input type="text" id="fname" name="firstname" required placeholder="Your first name" autofocus>
                 </div>
                 </div>
                 <div class="row">
                 <div class="col-25">
-                <label for="last name" class="name">Last Name:</label>
+                <label for="lname">Last Name:</label>
                 </div>
                 <div class="col-75">
-                <input type="text" class="name" name="last name" required placeholder="Your last name">
+                <input type="text" id="lname" name="lastname" required placeholder="Your last name">
                 </div>
                 </div>
                 <div class="row">
@@ -278,7 +267,7 @@ A Place, MO 888888</pre>
                 <label for="email">Email Address:</label>
                 </div>
                 <div class="col-75">
-                <input type="email" class="emailaddress" name="email" required placeholder="email@gmail.com">
+                <input type="email" id="email" name="email" required placeholder="email@gmail.com">
                 </div>
                 </div>
                 <div class="row">
@@ -286,7 +275,7 @@ A Place, MO 888888</pre>
                 <label for="subject">Subject:</label>
                 </div>
                 <div class="col-75">
-                <input type="text" class="subject" value="Portfolio Website Contact" readonly>
+                <input type="text" id="subject" value="Portfolio Website Contact" readonly>
                 </div>
                 </div>
                 <div class="row">
@@ -294,7 +283,7 @@ A Place, MO 888888</pre>
                 <label for="message">Message:</label>
                 </div>
                 <div class="col-75">
-                <textarea name= "message" class="message" required placeholder="Message"></textarea>
+                <textarea name= "message" id="message" required placeholder="Message"></textarea>
                 </div>
                 </div>
                 <div class="row">     <input type="submit" id="button" value="Send">
