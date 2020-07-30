@@ -5,8 +5,8 @@ Use: This page contains CSS for my Home, Resume, and Accomplishment pages.
 Author: Aubrey Tharp
 School/Term:University of Missouri-Columbia,Summer 2020
 Developed: June 27, 2020
-CSS Validataed: July 24, 2020
-Tested: July 24, 2020; Passed on Chrome, Safari, and Firefox browsers.
+CSS Validataed: July 29, 2020
+Tested: July 29, 2020; Passed on Chrome, Safari, and Firefox browsers.
 **********************************************************************
 */
 
@@ -29,9 +29,9 @@ header h1 {
     color: #000000;
     left: 0;
     right: 0;
-    margin: 50px 0 0 0;
+    margin: 25px 0 0 0;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     border-bottom: 2px solid black;
     font-family: "Amatic SC";
 }
